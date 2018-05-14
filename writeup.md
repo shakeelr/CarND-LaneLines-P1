@@ -51,10 +51,11 @@ Canny edge detection with low and high thresholds of 40 and 200
 Hough transform with rho = 1, theta = np.pi/180, threshold = 20, min_line_len = 12, max_line_gap = 1. The image_hough function calls draw_lines2(), a modified version of draw_lines().  
 
 In draw_lines2(), lines are seperated into left/right lane markings by slope. Negative slopes indicate left lane markings, and positive slopes indicate right lane markings. Lines with small values for slope are ignored as they indicate horizontal lines that are likely not lane markings. To extrapolate, lines are fitted through the points from the left and right line points to get the parameters for the left and right lane lines.  Using fixed values for y corresponding to the bottom and top of the lane, the x values are calcuated and the lane lines are drawn on the image.
+![alt text][image6]
 
 #### 7. Weighted images
 The output from the hough transform is combined with the original image to provide a semitransperant effect.
-
+![alt text][image7]
 
 ### 2. Identify potential shortcomings with your current pipeline
 
